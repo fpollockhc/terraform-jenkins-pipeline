@@ -1,5 +1,5 @@
 resource "aws_instance" "jenkins-server" {
-    ami = data.aws_ami.ubuntu.id
+    ami = "ami-052279f0c1c092e2e"
     instance_type = var.instance_type
     key_name = var.key_pair
     iam_instance_profile = aws_iam_instance_profile.jenkins-main-profile.id
