@@ -6,7 +6,7 @@ data "aws_ami" "ubuntu" {
     most_recent = true
 
     filter {
-        name = "name"
+        name_regex = "name"
         values = ["ubuntu-minimal/images/hvm-ssd/ubuntu-focal-20*"]
     }
 
