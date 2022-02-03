@@ -19,4 +19,6 @@ data "aws_ami" "ubuntu" {
         name = "architecture"
         values = ["x86_64"]
     }
+    
+    owner = "amazon"
 }
