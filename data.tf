@@ -6,8 +6,8 @@ data "aws_ami" "ubuntu" {
     most_recent = true
 
     filter {
-        name = "OS"
-        values = ["ubuntu-bionic"]
+        name = "name"
+        values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-*"]
     }
 
     filter {
@@ -19,6 +19,4 @@ data "aws_ami" "ubuntu" {
         name = "architecture"
         values = ["x86_64"]
     }
-
-    owners = ["711129375688"]
 }
