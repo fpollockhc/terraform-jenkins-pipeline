@@ -20,5 +20,5 @@ data "aws_ami" "ubuntu" {
         values = ["x86_64"]
     }
     
-    owner = "amazon"
+    owners = "amazon"
 }
